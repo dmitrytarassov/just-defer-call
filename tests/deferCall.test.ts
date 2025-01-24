@@ -1,6 +1,6 @@
 import { describe, expect, jest, test } from "@jest/globals";
 
-import deferCall from "../src";
+import { deferCall } from "../src";
 
 function sum(a: number, b: number): number {
   return a + b;
