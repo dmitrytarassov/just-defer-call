@@ -41,7 +41,7 @@ A new function that, when called, invokes the original function `fn` with the pr
 
 ## Examples
 
-### JavaScript Example
+### Vanilla Example 1 - Simple deferred call
 ```javascript
 import deferCall from "just-defer-call";
 
@@ -53,6 +53,33 @@ const deferredGreet = deferCall(greet, 'Alice');
 
 // Function execution is deferred
 deferredGreet(); // Logs: "Hello, Alice!"
+```
+
+### Vanilla Example 2 - pass as many arguments as you want
+```javascript
+import deferCall from "just-defer-call";
+
+function max(...args) {
+  console.log(`Max is: ${Math.max.apply(null, args)}!`);
+}
+
+const deferredMax = deferCall(max, 1, 2, 5, 4, 3);
+
+// Function execution is deferred
+deferredMax(); // Logs: "Max is: 5!"
+```
+
+### Vanilla Example 3 - onClick handler
+```js
+import deferCall from "just-defer-call";
+
+function onClickHandler(buttonIndex) {
+  alert(`Pressed button index: ${buttonIndex}`);
+}
+
+document.querySelectorAll("button").forEach((element, index) => {
+  element.addEventListener('click', deferCall(onClickHandler, index));
+});
 ```
 
 ### TypeScript Example
@@ -101,17 +128,6 @@ function App() {
 }
 
 export default App;
-```
-
-### Vanilla Example
-```js
-function onClickHandler(buttonIndex) {
-  alert(`Pressed button index: ${buttonIndex}`);
-}
-
-document.querySelectorAll("button").forEach((element, index) => {  
-  element.addEventListener('click', deferCall(onClickHandler, index));
-});
 ```
 
 ---
