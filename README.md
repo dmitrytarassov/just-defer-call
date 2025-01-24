@@ -1,8 +1,9 @@
-<div align="left">
-  <pre>
-  <h1>Use this: onClick={deferCall(fn, ⭐, 🔥, 🚀)}<br />Instead of this: onClick={() => fn(😭, 😢,😞)}</h1>
-  </pre>
-</div>
+```typescript
+// Use this
+onClick={deferCall(fn, ⭐, 🔥, 🚀)}
+// Instead of this
+onClick={() => fn(😭, 😢,😞)}
+```
 
 # `deferCall` Documentation
 

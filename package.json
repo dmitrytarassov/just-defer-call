@@ -1,13 +1,20 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "just-defer-call",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  },
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "eslint-config-the-only-perfect": "^1.3.8",
+    "tsup": "^8.3.5",
     "typescript": "^5.5.3"
   },
   "private": true
