@@ -1,3 +1,5 @@
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdmitrytarassov%2Fjust-defer-call%2Frefs%2Fheads%2Fmain%2Fpackage.json&query=%24.version&style=for-the-badge&label=just-defer-call&link=%24.repository)
+
 ```typescript
 // Use this
 onClick={deferCall(fn, ⭐, 🔥, 🚀)}
