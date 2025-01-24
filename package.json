@@ -2,9 +2,12 @@
   "name": "just-defer-call",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "repository": "https://github.com/dmitrytarassov/just-defer-call",
+  "author": "Dmitriy Tarasov <meowbl@icloud.com>",
+  "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "test": "jest"
   },
   "dependencies": {
@@ -17,5 +20,5 @@
     "tsup": "^8.3.5",
     "typescript": "^5.5.3"
   },
-  "private": true
+  "private": false
 }
